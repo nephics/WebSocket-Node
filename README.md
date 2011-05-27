@@ -111,7 +111,7 @@ This is a simple example client that will print out any utf-8 messages it receiv
         function sendNumber() {
             if (connection.connected) {
                 var number = Math.round(Math.random() * 0xFFFFFF);
-                connection.sendUTF(number);
+                connection.sendUTF(number.toString());
                 setTimeout(sendNumber, 1000);
             }
         }
