@@ -102,7 +102,7 @@ This is a simple example client that will print out any utf-8 messages it receiv
             console.log("Connection Error: " + error.toString());
         });
         connection.on('close', function() {
-            console.log("dumb-increment-protocol Connection Closed");
+            console.log("Connection Closed");
         })
         connection.on('message', function(message) {
             console.log("Received: '" + message.utf8Data + "'");
